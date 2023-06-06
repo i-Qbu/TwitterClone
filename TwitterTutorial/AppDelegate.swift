@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // disable UINavigation bar transparent
             let navigationBarAppearance = UINavigationBarAppearance()
             navigationBarAppearance.configureWithDefaultBackground()
+            navigationBarAppearance.backgroundColor = .white
             UINavigationBar.appearance().standardAppearance = navigationBarAppearance
             UINavigationBar.appearance().compactAppearance = navigationBarAppearance
             UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
@@ -27,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // disable UITab bar transparent
             let tabBarAppearance: UITabBarAppearance = UITabBarAppearance()
             tabBarAppearance.configureWithDefaultBackground()
+            tabBarAppearance.backgroundColor = .white
             UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
             UITabBar.appearance().standardAppearance = tabBarAppearance
         }
