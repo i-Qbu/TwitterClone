@@ -13,6 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        if #available(iOS 15.0, *) {
+            // disable UINavigation bar transparent
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.configureWithDefaultBackground()
+            UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+            UINavigationBar.appearance().compactAppearance = navigationBarAppearance
+            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+        }
+        
         if #available(iOS 15.0, *) {
             // disable UITab bar transparent
             let tabBarAppearance: UITabBarAppearance = UITabBarAppearance()
@@ -20,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
             UITabBar.appearance().standardAppearance = tabBarAppearance
         }
+        
         return true
     }
 
