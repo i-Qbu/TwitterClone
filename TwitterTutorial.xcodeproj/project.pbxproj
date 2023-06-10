@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A835C3CC2A348F3200A6862A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835C3CB2A348F3200A6862A /* LoginController.swift */; };
+		A835C3CE2A34902600A6862A /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835C3CD2A34902600A6862A /* RegistrationController.swift */; };
 		A86D6D282A276B7700DFB94C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D6D272A276B7700DFB94C /* AppDelegate.swift */; };
 		A86D6D2A2A276B7700DFB94C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D6D292A276B7700DFB94C /* SceneDelegate.swift */; };
 		A86D6D2F2A276B7700DFB94C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86D6D2D2A276B7700DFB94C /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A835C3CB2A348F3200A6862A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		A835C3CD2A34902600A6862A /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		A86D6D242A276B7700DFB94C /* TwitterTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86D6D272A276B7700DFB94C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A86D6D292A276B7700DFB94C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A835C3CA2A348F1100A6862A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A835C3CB2A348F3200A6862A /* LoginController.swift */,
+				A835C3CD2A34902600A6862A /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		A86D6D1B2A276B7600DFB94C = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +113,7 @@
 		A86D6D402A276D0700DFB94C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A835C3CA2A348F1100A6862A /* Authentication */,
 				A86D6D442A276F6300DFB94C /* MainTabController.swift */,
 				A86D6D462A27731200DFB94C /* FeedController.swift */,
 				A86D6D482A27737800DFB94C /* ExploreController.swift */,
@@ -208,6 +222,8 @@
 				A86D6DB62A2F07E400DFB94C /* Extentions.swift in Sources */,
 				A86D6D2A2A276B7700DFB94C /* SceneDelegate.swift in Sources */,
 				A86D6D452A276F6300DFB94C /* MainTabController.swift in Sources */,
+				A835C3CC2A348F3200A6862A /* LoginController.swift in Sources */,
+				A835C3CE2A34902600A6862A /* RegistrationController.swift in Sources */,
 				A86D6D472A27731200DFB94C /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
