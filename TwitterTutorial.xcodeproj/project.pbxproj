@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A835C3CC2A348F3200A6862A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835C3CB2A348F3200A6862A /* LoginController.swift */; };
 		A835C3CE2A34902600A6862A /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835C3CD2A34902600A6862A /* RegistrationController.swift */; };
+		A835C3D02A349AFF00A6862A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835C3CF2A349AFF00A6862A /* Utilities.swift */; };
 		A86D6D282A276B7700DFB94C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D6D272A276B7700DFB94C /* AppDelegate.swift */; };
 		A86D6D2A2A276B7700DFB94C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D6D292A276B7700DFB94C /* SceneDelegate.swift */; };
 		A86D6D2F2A276B7700DFB94C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86D6D2D2A276B7700DFB94C /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		A835C3CB2A348F3200A6862A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		A835C3CD2A34902600A6862A /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		A835C3CF2A349AFF00A6862A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		A86D6D242A276B7700DFB94C /* TwitterTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86D6D272A276B7700DFB94C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A86D6D292A276B7700DFB94C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				A86D6DB52A2F07E400DFB94C /* Extentions.swift */,
+				A835C3CF2A349AFF00A6862A /* Utilities.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				A86D6D4B2A2773AB00DFB94C /* NotificationsController.swift in Sources */,
 				A86D6D4D2A2773E700DFB94C /* ConversationsController.swift in Sources */,
+				A835C3D02A349AFF00A6862A /* Utilities.swift in Sources */,
 				A86D6D282A276B7700DFB94C /* AppDelegate.swift in Sources */,
 				A86D6D492A27737800DFB94C /* ExploreController.swift in Sources */,
 				A86D6DB62A2F07E400DFB94C /* Extentions.swift in Sources */,
