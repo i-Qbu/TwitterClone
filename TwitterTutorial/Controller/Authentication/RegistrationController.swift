@@ -98,7 +98,6 @@ class RegistrationController: UIViewController {
             guard let window = windowScene.windows.first(where: { $0.isKeyWindow }) else { return }
             guard let tab = window.rootViewController as? MainTabController else { return }
             tab.authenticateUserAndConfigureUI()
-            tab.configureUI()
             self.dismiss(animated: true)
         }
 
