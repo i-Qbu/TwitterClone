@@ -12,6 +12,7 @@
 		A8211AD22A39DC48002107D1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A8211AD12A39DC48002107D1 /* FirebaseAuth */; };
 		A8211AD42A39DC48002107D1 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A8211AD32A39DC48002107D1 /* FirebaseDatabase */; };
 		A8211AD62A39DC48002107D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A8211AD52A39DC48002107D1 /* FirebaseStorage */; };
+		A8211AD82A39DE23002107D1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8211AD72A39DE23002107D1 /* AuthService.swift */; };
 		A835C3CC2A348F3200A6862A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835C3CB2A348F3200A6862A /* LoginController.swift */; };
 		A835C3CE2A34902600A6862A /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835C3CD2A34902600A6862A /* RegistrationController.swift */; };
 		A835C3D02A349AFF00A6862A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835C3CF2A349AFF00A6862A /* Utilities.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		A8211A382A35C429002107D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A8211A972A39B67E002107D1 /* Contents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contents.swift; sourceTree = "<group>"; };
+		A8211AD72A39DE23002107D1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A835C3CB2A348F3200A6862A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		A835C3CD2A34902600A6862A /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		A835C3CF2A349AFF00A6862A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		A86D6D3F2A276D0500DFB94C /* API */ = {
 			isa = PBXGroup;
 			children = (
+				A8211AD72A39DE23002107D1 /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				A86D6D282A276B7700DFB94C /* AppDelegate.swift in Sources */,
 				A86D6D492A27737800DFB94C /* ExploreController.swift in Sources */,
 				A86D6DB62A2F07E400DFB94C /* Extentions.swift in Sources */,
+				A8211AD82A39DE23002107D1 /* AuthService.swift in Sources */,
 				A86D6D2A2A276B7700DFB94C /* SceneDelegate.swift in Sources */,
 				A8211A982A39B67E002107D1 /* Contents.swift in Sources */,
 				A86D6D452A276F6300DFB94C /* MainTabController.swift in Sources */,

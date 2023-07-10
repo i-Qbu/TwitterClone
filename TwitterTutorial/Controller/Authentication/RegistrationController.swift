@@ -86,38 +86,22 @@ class RegistrationController: UIViewController {
         guard let password = passwordTextField.text else { return }
         guard let fullname = fullnameTextField.text else { return }
         guard let username = usernameTextField.text else { return }
-        
-        guard let imageData = profileImage.jpegData(compressionQuality: 0.3) else { return }
-        let filename = NSUUID().uuidString
-        let storageRef = STORAGE_PROFILE_IMAGES.child(filename)
-        
-        storageRef.putData(imageData, metadata: nil) { (meta, error) in
-            if let error = error {
-                print("DEBUG: Error is \(error.localizedDescription)")
-                return
-            }
-            storageRef.downloadURL { (url, error) in
-                guard let profileImageUrl = url?.absoluteString else { return }
 
-                Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-                    if let error = error {
-                        print("DEBUG: Error is \(error.localizedDescription)")
-                        return
-                    }
-                    
-                    guard let uid = result?.user.uid else { return }
-                    
-                    let values = ["email": email,
-                                  "username": username,
-                                  "fullname": fullname,
-                                  "profileImageUrl": profileImageUrl]
-                    
-                    REF_USERS.child(uid).updateChildValues(values) { (error, ref) in
-                        print("DEBUG: Successfully updated user information..")
-                    }
-                }
-            }
+        let credentials = AuthCredentials(email: email,
+                                          password: password,
+                                          fullname: fullname,
+                                          username: username,
+                                          profileImage: profileImage)
+        
+        AuthService.shared.registerUser(credentials: credentials) { (error, ref) in
+            guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
+            guard let window = windowScene.windows.first(where: { $0.isKeyWindow }) else { return }
+            guard let tab = window.rootViewController as? MainTabController else { return }
+            tab.authenticateUserAndConfigureUI()
+            tab.configureUI()
+            self.dismiss(animated: true)
         }
+
     }
     
     @objc func handleShowLogin() {
