@@ -7,12 +7,19 @@
 
 import UIKit
 
+protocol TweetCellDelegate: AnyObject {
+    func handleProfileImageTapped()
+}
+
 class TweetCell: UICollectionViewCell {
     
     // MARK: - Properties
     var tweet: Tweet? {
         didSet { configure() }
     }
+    
+    // 呼び出し側の実装への参照を保つため，弱参照(ポインタ参照)
+    weak var delegate: TweetCellDelegate?
     
     private lazy var profileImageView: UIImageView = {
         let iv = UIImageView()
@@ -119,7 +126,7 @@ class TweetCell: UICollectionViewCell {
     // MARK: - Selectors
     
     @objc func handleProfileImageTapped() {
-        
+        delegate?.handleProfileImageTapped()
     }
     
     @objc func handleCommentTapped() {
