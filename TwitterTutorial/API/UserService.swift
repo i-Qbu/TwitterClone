@@ -11,7 +11,7 @@ import Firebase
 struct UserService {
     static let shared = UserService() // こうやって自信を定義できるのか!
     
-    func fetchUser(completion: @escaping(User) -> Void) {
+    func fetchUser(uid: String, completion: @escaping(User) -> Void) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
         // get current user information
